@@ -1,0 +1,2 @@
+### Revenue Request Index
+GET http://localhost:3000/revenue_request.json
