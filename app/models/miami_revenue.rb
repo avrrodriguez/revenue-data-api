@@ -1,0 +1,2 @@
+class MiamiRevenue < ApplicationRecord
+end

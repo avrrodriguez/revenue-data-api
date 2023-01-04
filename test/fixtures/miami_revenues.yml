@@ -1,0 +1,63 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  fy: MyString
+  fund_type: MyString
+  fund_number: MyString
+  fund_description: MyString
+  department_function_description: MyString
+  department_description: MyString
+  organization_number: MyString
+  organization_description: MyString
+  object_type: MyString
+  object_number: MyString
+  object_description: MyString
+  oct: 1
+  nov: 1
+  dec: 1
+  jan: 1
+  feb: 1
+  mar: 1
+  apr: 1
+  may: 1
+  jun: 1
+  jul: 1
+  aug: 1
+  sep: 1
+  thirteenth_month: 1
+  total: 1
+  encumbrance: 1
+  adopted_budget: 1
+  amended_budget: 1
+
+two:
+  type: 
+  fy: MyString
+  fund_type: MyString
+  fund_number: MyString
+  fund_description: MyString
+  department_function_description: MyString
+  department_description: MyString
+  organization_number: MyString
+  organization_description: MyString
+  object_type: MyString
+  object_number: MyString
+  object_description: MyString
+  oct: 1
+  nov: 1
+  dec: 1
+  jan: 1
+  feb: 1
+  mar: 1
+  apr: 1
+  may: 1
+  jun: 1
+  jul: 1
+  aug: 1
+  sep: 1
+  thirteenth_month: 1
+  total: 1
+  encumbrance: 1
+  adopted_budget: 1
+  amended_budget: 1
