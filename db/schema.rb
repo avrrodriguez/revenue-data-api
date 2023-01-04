@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_04_172347) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_04_193537) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "miami_revenues", force: :cascade do |t|
     t.integer "unique_key"
-    t.string "type"
+    t.string "revenue_type"
     t.string "fy"
     t.string "fund_type"
     t.string "fund_number"
