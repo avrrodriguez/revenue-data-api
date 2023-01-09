@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get "/revenue_request", controller: "revenue_request", action: "request"
+
+  get "/revenues", controller: "revenues", action: "index"
 end
