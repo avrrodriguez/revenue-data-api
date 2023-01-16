@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   get "/revenues", controller: "revenues", action: "index"
 
   # Miami Revenue Scopes
-  get "/revenues", controller: "revenues", action: "with_no_budget"
-  get "/revenues", controller: "revenues", action: "with_bonus"
-  get "/revenues", controller: "revenues", action: "yearly_department_earnings"
-  get "/revenues", controller: "revenues", action: "department_organizations_earnings"
+  get "/with_no_budget", controller: "revenues", action: "with_no_budget"
+  get "/with_bonus", controller: "revenues", action: "with_bonus"
+  get "/yearly_department_earnings", controller: "revenues", action: "yearly_department_earnings"
+  get "/department_organizations_earnings", controller: "revenues", action: "department_organizations_earnings"
 end
