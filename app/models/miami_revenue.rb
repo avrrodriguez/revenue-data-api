@@ -56,6 +56,7 @@ class MiamiRevenue < ApplicationRecord
   scope :yearly_department_earnings, -> { select("department_description, fy, sum(total) as total_revenue").group("department_description, fy") }
   scope :department_organizations, ->(department) { select("organization_description").where("department_description LIKE ?", department) }
   scope :with_bonus, -> { where("thirteenth_month > 0") }
+  scope :organization_budget, ->(organization) { select("organization_description, fy, total").where("organization_description LIKE ?", organization) }
   # scope :yearly_department_total, -> {
   #         select("case when fy = '2006' then sum(total) end as _2006,
   #               case when fy = '2007' then sum(total) end as _2007,
