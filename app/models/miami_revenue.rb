@@ -52,10 +52,10 @@ class MiamiRevenue < ApplicationRecord
                               COMMISSION_CHAIRPERSONS_OFFICE: "Commission Chairperson's Office" }.freeze
 
   scope :with_no_budget, -> { where("adopted_budget = 0") }
+  scope :with_bonus, -> { where("thirteenth_month > 0") }
   scope :building_department, -> { where("department_description = ?", DEPARTMENT_DESCRIPTIONS[:BUILDING]) }
   scope :yearly_department_earnings, -> { select("department_description, fy, sum(total) as total_revenue").group("department_description, fy") }
   scope :department_organizations_earnings, ->(department) { select("organization_description, fy, sum(total) as total_organization_revenue").where("department_description LIKE ?", department).group("organization_description, fy") }
-  scope :with_bonus, -> { where("thirteenth_month > 0") }
   scope :department_organizations, ->(department) { select("organization_description").where("department_description LIKE ?", department).group("organization_description") }
 
   # scope :yearly_department_total, -> {
