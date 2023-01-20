@@ -17,7 +17,7 @@ class RevenuesController < ApplicationController
   end
 
   def yearly_department_earnings
-    earnings = MiamiRevenue.yearly_department_earnings
+    earnings = MiamiRevenue.yearly_department_earnings.order("fy")
 
     render json: earnings.as_json
   end
