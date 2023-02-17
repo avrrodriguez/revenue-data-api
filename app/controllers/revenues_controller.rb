@@ -18,6 +18,7 @@ class RevenuesController < ApplicationController
 
   def yearly_department_earnings
     earnings = MiamiRevenue.yearly_department_earnings.order("fy")
+    # earnings = earnings.select { |earning| earning["total_revenue"] < 1000000 }
 
     render json: earnings.as_json
   end
