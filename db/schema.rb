@@ -1,5 +1,7 @@
 # 13th month: The 13th month pay is a form of monetary benefit equivalent to the monthly basic compensation received by an employee, computed pro-data according to the number of months within a year that the employee has rendered service to the employer.
 # encumbrance: (a) An anticipated expenditure, evidenced by a contract or purchase order, or determined by administrative action. (b) Commitment. (c) Any lien or other liability attaching to real property.
+# Adopted budget: official budget adopted at the beginning of the fiscal year
+# Amended Budget: changes in budget that reflect the expenditure of the year.
 
 ActiveRecord::Schema[7.0].define(version: 2023_01_04_193537) do
   # These are extensions that must be enabled in order to support this database
