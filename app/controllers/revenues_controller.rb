@@ -1,6 +1,6 @@
 class RevenuesController < ApplicationController
   def index
-    revenues = MiamiRevenue.all
+    revenues = MiamiRevenue.first
     render json: revenues.as_json
   end
 
