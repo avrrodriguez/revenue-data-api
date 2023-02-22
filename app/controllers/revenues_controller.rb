@@ -1,6 +1,7 @@
 class RevenuesController < ApplicationController
   def index
-    revenues = MiamiRevenue.first
+    # revenues = MiamiRevenue.first
+    revenues = MiamiRevenueSerializer.new(MiamiRevenue.first).serializable_hash
     render json: revenues.as_json
   end
 
