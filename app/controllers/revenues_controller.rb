@@ -1,8 +1,8 @@
 class RevenuesController < ApplicationController
   def index
-    # revenues = MiamiRevenue.first
-    revenues = MiamiRevenueSerializer.new(MiamiRevenue.first).serializable_hash
-    render json: revenues.as_json
+    revenues = MiamiRevenue.first
+    serialized = MiamiRevenueSerializer.new(revenues, { params: { revenue_id: revenues["id"] } }).serializable_hash
+    render json: serialized.as_json
   end
 
   def with_no_budget
