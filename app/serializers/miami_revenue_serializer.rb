@@ -5,4 +5,8 @@ class MiamiRevenueSerializer
   attribute :budget_change do |object|
     object.adopted_budget - object.amended_budget
   end
+
+  attribute :thirteen_budget_correlation do |object|
+    object.thirteen_month
+  end
 end
