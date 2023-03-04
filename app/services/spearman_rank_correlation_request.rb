@@ -1,5 +1,5 @@
 class SpearmanRankCorrelationRequest
-  def pearson_correlation
+  def spearman_rank_correlation
     "hello"
   end
 end
