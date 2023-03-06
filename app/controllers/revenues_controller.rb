@@ -5,6 +5,10 @@ class RevenuesController < ApplicationController
     render json: serialized.as_json
   end
 
+  def spearman_rank_correlation
+    render json: { "message": "connected" }
+  end
+
   def with_no_budget
     no_budget = MiamiRevenue.with_no_budget
 

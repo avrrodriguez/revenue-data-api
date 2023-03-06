@@ -3,3 +3,6 @@ GET http://localhost:3000/revenues.json
 
 ### Revenue with no budget 
 GET http://localhost:3000/with_no_budget.json
+
+### Spearman Rank Correlation
+GET http://localhost:3000/spearman_rank_correlation.json
