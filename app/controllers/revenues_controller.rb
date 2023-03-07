@@ -7,6 +7,8 @@ class RevenuesController < ApplicationController
 
   def spearman_rank_correlation
     spearman_correlation_coefficient = SpearmanRankCorrelationRequest.new("thirteenth_month", "adopted_budget")
+    p spearman_correlation_coefficient.column_name1[0..4]
+
     render json: { "message": "connected" }
   end
 

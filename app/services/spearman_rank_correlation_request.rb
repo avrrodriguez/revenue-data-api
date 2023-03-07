@@ -1,9 +1,9 @@
 class SpearmanRankCorrelationRequest
+  attr_reader :column1_data, :column2_data
+
   def initialize(column_name1, column_name2)
-    @column_name1 = get_data_from_column_as_array(column_name1)
-    @column_name2 = get_data_from_column_as_array(column_name2)
-    p @column_name1[0..3], @column_name2[0..3]
-    p sort_array_desc_order(@column_name1)[0..3]
+    @column1_data = get_data_from_column_as_array(column_name1)
+    @column2_data = get_data_from_column_as_array(column_name2)
   end
 
   def get_data_from_column_as_array(column_name)
