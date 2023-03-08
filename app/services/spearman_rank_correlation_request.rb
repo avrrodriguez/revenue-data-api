@@ -22,11 +22,12 @@ class SpearmanRankCorrelationRequest
 
     rank_columns()
 
-    p "ranks", @column1_data_ranks[0..4]
-    p @column2_data_ranks[0..4]
+    determine_rank_distance()
+    p @rank_distance[0..4]
   end
 
   def rank_columns
+    # problem, setting nil to 0 when 0 due to multiple 0's in both arrays but distance is not 0 for them
     sort_array_desc_order(@column1_data).each_with_index do |number, index|
       @column1_data_ranks[@column1_data.index(number)] = index + 1
     end
@@ -50,9 +51,6 @@ class SpearmanRankCorrelationRequest
         number = number
       end
     end
-
-    p "data 1 rank", @column1_data_ranks[0..4]
-    p "data 2 rank", @column2_data_ranks[0..4]
   end
 
   def determine_rank_distance
